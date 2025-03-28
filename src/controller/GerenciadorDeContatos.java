@@ -57,4 +57,16 @@ public class GerenciadorDeContatos {
             System.out.println("Contato não encontrado.\n");
         }
     }
+
+    public void excluirContato() {
+        System.out.println("Digite o nome do contato");
+        String nome = scanner.nextLine();
+        boolean removido = listaContatos.removeIf(listaContatos -> listaContatos.getNome().equalsIgnoreCase(nome));
+
+        if (removido) {
+            System.out.println("Contato removido com sucesso!");
+        } else {
+            System.out.println("Contato não encontrado.");
+        }
+    }
 }

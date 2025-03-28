@@ -14,6 +14,7 @@ public class Main {
             System.out.println("1. Adicionar Contato");
             System.out.println("2. Listar Contato");
             System.out.println("3. Buscar Contato");
+            System.out.println("4. Excluir contato");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
@@ -29,6 +30,8 @@ public class Main {
                 case 3:
                     gerenciador.buscarContato();
                     break;
+                case 4:
+                    gerenciador.excluirContato();
                 case 0:
                     System.out.println("Saindo...");
                     break;
